@@ -15,8 +15,8 @@ from trafilatura.settings import DEFAULT_CONFIG
 argparser = ArgumentParser("Crawl Naver news articles")
 argparser.add_argument("--output-path", type=str, default="news.json")
 argparser.add_argument("--query", type=str, nargs="+", default="반도체") # nargs를 사용해 한개 값 이상 받기
-argparser.add_argument("--start-date", type=str, default="2024.07.15")
-argparser.add_argument("--end-date", type=str, default="2024.08.15")
+argparser.add_argument("--start-date", type=str, default="2024.07.01")
+argparser.add_argument("--end-date", type=str, default="2024.08.31")
 argparser.add_argument("--num-workers", type=int, default=10)
 
 def news_body(url:str) -> Optional[Dict[str, Any]]: # 뉴스 본문 가져오기
